@@ -1,0 +1,42 @@
+{
+  "name": "react-cyclic",
+  "version": "1.0.0",
+  "description": "Flexible react component to cycle through a list of items",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "test": "jest --config jestconfig.json --watch",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elcoosp/react-cyclic.git"
+  },
+  "keywords": [
+    "cycle",
+    "list",
+    "array",
+    "iterable",
+    "react"
+  ],
+  "author": "elcoosp <elcoosp@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elcoosp/react-cyclic/issues"
+  },
+  "homepage": "https://github.com/elcoosp/react-cyclic#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "jest": "^23.5.0",
+    "prettier": "^1.14.2",
+    "ts-jest": "^23.1.4",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0.1"
+  }
+}
